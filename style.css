@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f5f7fa;
+    line-height: 1.6;
+}
+
+img {
+    width: 900px;
+    max-width: 100%;
+    height:auto;
+    display: block;
+}
+
+main{
+    width: min(92%, 900px);
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #17365d;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+header {
+    background: #17365d;
+    color: white;
+    padding: 2rem 4%;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    background: white;
+    padding: 0.75rem 4%;
+    border-bottom: 1px solid #dbe2ea;
+}
+
+nav a {
+    color: #17365d;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.site-nav ul { 
+  display: flex; 
+  gap: 16px; 
+  flex-wrap: wrap; 
+  list-style: none; 
+  padding: 0; 
+} 
+
+.card {
+    background: white;
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card-list { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 16px; 
+} 
+ 
+.card { 
+  flex: 1 1 260px; 
+} 
+
+.container {
+    width: 1200px; 
+    margin-inline: auto; 
+}
+
+footer {
+    background: #e9eef5;
+    padding: 1.25rem 4%;
+}
+
+ @media (max-width: 700px) { 
+  .hero { 
+    padding: 32px 0; 
+  } 
+ 
+  .hero-actions { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px; 
+  } 
+ 
+  .hero-actions a { 
+    width: 100%; 
+    text-align: center; 
+  } 
+}
+
+.status { 
+    margin-top: 10px;
+    padding: 0.75rem 1rem; 
+    border-radius: 0.75rem; 
+    border: 1px solid currentColor; 
+} 
+ 
+.status.neutral { opacity: 0.8; } 
+.status.success { color: #176b35; background: #e5f6e9; font-weight: 700; } 
+.status.error { color: #a32121; background: #fde8e8; font-weight: 700; } 
+
+#seatRequest {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#seatForm button {
+    padding: 12px;
+    background: #17365d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#seatForm button:hover {
+    background: #285987;
+}

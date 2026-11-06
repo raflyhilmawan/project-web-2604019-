@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>TechStater Day</title> 
+
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+</head> 
+
+<body>
+    <header>
+        <p>PROJECT APLIKASI WEB</p>
+        <h1>TechStarter Day 2026</h1>
+        <p>Dari pengguna teknologi menjadi pembuat teknologi.</p>
+
+        <nav aria-label="Navigasi utama">
+            <a href="#tentang">Tentang</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#manfaat">Manfaat</a>
+            <a href="#kontak">Kontak</a>
+            <a href="#pendaftaran">Pendaftaran</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="tentang">
+            <h2>Tentang TechStarter Day</h2>
+            <p>
+                TechStarter Day adalah kegiatan pengenalan dunia pengembangan web untuk mahasiswa baru Teknologi Informasi.
+            </p>
+
+            <div class="card-list">
+            <article class="card">
+                <h3>Materi Praktik</h3>
+                <p>
+                Peserta belajar HTML, CSS, JavaScript, DevTools, dan Git.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Tujuan Kegiatan</h3>
+                <p>
+                Peserta mengenal cara developer menyusun informasi, menggunakan tools, membaca error, dan membangun sesuatu secara bertahap.
+                </p>
+            </article>
+            </div>
+            
+        </section>
+
+        <section id="pendaftaran" class="registration-card" aria-labelledby="registrationTitle">
+
+            <h2 id="registrationTitle">Cek Ketersediaan Kursi</h2>
+
+            <p>Ingin mengikuti TechStarter Day 2026? Periksa ketersediaan kursi sebelum melakukan pendaftaran.</p>
+
+            <form id="seatForm">
+
+                <label for="seatRequest">Jumlah kursi yang dibutuhkan</label>
+
+                <input
+                    id="seatRequest"
+                    name="seatRequest"
+                    type="number"
+                    min="1"
+                    step="1"
+                    required
+                >
+
+                <button type="submit">Cek Kursi</button>
+
+            </form>
+
+            <p id="seatMessage" class="status neutral" aria-live="polite">
+                Masukkan jumlah kursi lalu tekan Cek Kursi.
+            </p>
+
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Mengenal cara kerja halaman web</li>
+                <li>Menyusun struktur HTML semantic</li>
+                <li>Mencoba DevTools dan debugging</li>
+                <li>Menyimpan checkpoint dengan Git</li>
+            </ol>
+        </section>
+
+        <section id="manfaat">
+            <h2>Apa yang Akan Dipelajari?</h2>
+            <figure>
+                <img src="assets/images/lab.jpg" alt="Mahasiswa menggunakan komputer di laboratorium untuk praktik pengembangan web">
+                <figcaption>Praktik dimulai dari memahami alat dan struktur sebelum mengejar tampilan.</figcaption>
+            </figure>
+            <ul>
+                <li>Membaca struktur halaman sebagai developer</li>
+                <li>Memilih tag berdasarkan makna konten.</li>
+                <li>Mendiagnosis link dan gambar yang gagal.</li>
+                <li>Menyimpan perkembangan projek dengan Git.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="kontak">
+        <p>Politeknik Gajah Tunggal · Teknologi Informasi · Project Aplikasi Web Semester 1</p>
+    </footer>
+</body>
+</html>
